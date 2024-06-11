@@ -45,7 +45,7 @@ jobs:
           OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
           CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
         run: |
-          ossutil cp -r dist/ oss://$OSS_BUCKET/ --update --progress
+          ossutil cp -r dist/ oss://$OSS_BUCKET
 
       - name: Refresh Aliyun DCDN Cache
         env:
