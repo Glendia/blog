@@ -57,4 +57,4 @@ jobs:
           aliyun configure set --access-key-id $DCDN_ACCESS_KEY_ID --access-key-secret $DCDN_ACCESS_KEY_SECRET --region cn-hangzhou
           
           # Refresh DCDN cache (adjust ObjectPath to your needs)
-          aliyun dcdn RefreshObjectCaches --ObjectPath "<your_website_url>/*" --ObjectType "Directory"
+          aliyun dcdn RefreshObjectCaches --ObjectPath "https://docs.workstatic.cn/*" --ObjectType "Directory"
