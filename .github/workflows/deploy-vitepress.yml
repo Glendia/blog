@@ -26,11 +26,6 @@ jobs:
       - name: Build the project
         run: pnpm run docs:build
 
-      - name: Deploy to GitHub Pages
-        run: |
-          pnpm install -g gh-pages
-          gh-pages -d dist
-
       - name: Upload to Aliyun OSS
         env:
           OSS_REGION: ${{ secrets.OSS_REGION }}
