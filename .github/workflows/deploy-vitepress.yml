@@ -26,6 +26,12 @@ jobs:
       - name: Build the project
         run: pnpm run docs:build
 
+      - name: Download and setup ossutil
+        run: |
+          curl -L https://gosspublic.alicdn.com/ossutil/1.7.9/ossutil64 -o ossutil64
+          chmod 755 ossutil64
+          sudo mv ossutil64 /usr/local/bin/ossutil
+
       - name: Upload to Aliyun OSS
         env:
           OSS_REGION: ${{ secrets.OSS_REGION }}
@@ -33,23 +39,5 @@ jobs:
           OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
           OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
         run: |
-          curl -L https://github.com/aliyun/ossutil/releases/latest/download/ossutil64 -o ossutil
-          chmod 755 ossutil
-          ./ossutil config --endpoint=$OSS_REGION --access-key-id=$OSS_ACCESS_KEY_ID --access-key-secret=$OSS_ACCESS_KEY_SECRET
-          ./ossutil cp -r dist/ oss://$OSS_BUCKET/ --update
-
-      - name: Refresh Aliyun DCDN Cache
-        env:
-          DCDN_ACCESS_KEY_ID: ${{ secrets.DCDN_ACCESS_KEY_ID }}
-          DCDN_ACCESS_KEY_SECRET: ${{ secrets.DCDN_ACCESS_KEY_SECRET }}
-        run: |
-          # Install aliyun-cli
-          curl -L https://github.com/aliyun/aliyun-cli/releases/latest/download/aliyun-cli-linux-amd64 -o aliyun
-          chmod +x aliyun
-          sudo mv aliyun /usr/local/bin/
-          
-          # Configure aliyun-cli with your credentials
-          aliyun configure set --access-key-id $DCDN_ACCESS_KEY_ID --access-key-secret $DCDN_ACCESS_KEY_SECRET --region cn-hangzhou
-          
-          # Refresh DCDN cache (adjust ObjectPath to your needs)
-          aliyun dcdn RefreshObjectCaches --ObjectPath "https://docs.workstatic.cn/*" --ObjectType "Directory"
+          ossutil config --endpoint=$OSS_REGION --access-key-id=$OSS_ACCESS_KEY_ID --access-key-secret=$OSS_ACCESS_KEY_SECRET
+          ossutil cp -r dist/ oss://$OSS_BUCKET/ --update
