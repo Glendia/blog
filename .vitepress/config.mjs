@@ -9,7 +9,6 @@ import { editLink } from './js/editLink';
 // import { algolia } from './js/algolia';
 
 export default defineConfig({
-  base: '/blog/',
   lang: 'zh-CN',
   title: "My Awesome Project",
   titleTemplate: ':title - Developer Blog | 编织代码梦想，启航开发者未来',
