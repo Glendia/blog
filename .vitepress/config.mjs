@@ -12,7 +12,7 @@ export default defineConfig({
   base: '/blog/',
   lang: 'zh-CN',
   title: "My Awesome Project",
-  titleTemplate: ':title - Developer | 编织代码梦想，启航开发者未来',
+  titleTemplate: ':title - Developer Blog | 编织代码梦想，启航开发者未来',
   description: "探索编程新境界，连接开发者智慧。我们提供前沿技术资讯、实战教程、高效工具与深度交流平台，激发创意，助力每一位开发者成就不凡。从Vue.js到VitePress，携手构建互联网的明天",
   head: head,
   outDir: './docs',
@@ -30,7 +30,7 @@ export default defineConfig({
     nav: nav,
     footer: footer,
     editLink: {
-      pattern: 'https://github.com/glendia/blog/edit/main/docs/:path',
+      pattern: 'https://github.com/glendia/blog/edit/master/docs/:path',
       text: '在 GitHub 上编辑此页',
     },
     // carbonAds: carbonAds,
@@ -46,20 +46,20 @@ export default defineConfig({
       provider: 'local',
     },
     sidebar: {
-      '/developer/git/': [
+      '/dev/git/': [
         {
           text: 'Git指南',
           collapsed: false,
           items: [
-            { text: '前言', link: '/developer/git/' },
-            { text: '目录', link: '/developer/git/#快速定位' },
+            { text: '前言', link: '/dev/git/' },
+            { text: '目录', link: '/dev/git/#Quick-positioning' },
           ]
         },
         {
           text: '初级命令',
           collapsed: true,
           items: [
-            { text: '配置', link: '/developer/git/config' },
+            { text: '配置', link: '/dev/git/config' },
 
           ]
         },
@@ -67,7 +67,7 @@ export default defineConfig({
           text: '高级命令',
           collapsed: true,
           items: [
-            { text: '查看远程', link: '/developer/git/remote' },
+            { text: '查看远程', link: '//git/remote' },
           ]
         },
         {
@@ -89,27 +89,34 @@ export default defineConfig({
         },
 
       ],
-      '/developer/frontend/': [
+      '/dev/frontend/': [
         {
           text: 'vue指南',
           collapsed: true,
           items: [
-            { text: 'Vite', link: '/developer/vite/' },
+            { text: 'Vite', link: '/dev/vite/' },
           ],
         },
         {
           text: '前端指南',
           collapsed: true,
           items: [
-            { text: 'Vue', link: '/developer/vue/' },
+            { text: 'Vue', link: '/dev/vue/' },
           ]
         }],
-      '/developer/system/': [
+      '/dev/system/': [
+        {
+          text: '',
+          items: [
+            { text: '简介', link: '/dev/centos/' },
+
+          ]
+        },
         {
           text: 'CentOS',
           items: [
-            { text: 'CentOS', link: '/developer/centos/' },
-            { text: 'CentOS', link: '/developer/centos/config' },
+            { text: 'CentOS', link: '/dev/centos/' },
+            { text: 'CentOS', link: '/dev/centos/config' },
 
           ]
         },
@@ -117,8 +124,8 @@ export default defineConfig({
           text: 'Ubuntu',
           collapsed: true,
           items: [
-            { text: 'Ubuntu', link: '/developer/Ubuntu/' },
-            { text: 'Ubuntu', link: '/developer/Ubuntu/config' },
+            { text: 'Ubuntu', link: '/dev/Ubuntu/' },
+            { text: 'Ubuntu', link: '/dev/Ubuntu/config' },
 
           ]
         },
@@ -126,8 +133,8 @@ export default defineConfig({
           text: 'deepin',
           collapsed: true,
           items: [
-            { text: 'deepin', link: '/developer/deepin/' },
-            { text: 'deepin', link: '/developer/deepin/config' },
+            { text: 'deepin', link: '/dev/deepin/' },
+            { text: 'deepin', link: '/dev/deepin/config' },
 
           ]
         },
@@ -135,8 +142,8 @@ export default defineConfig({
           text: 'Windows',
           collapsed: true,
           items: [
-            { text: 'Windows', link: '/developer/Windows/' },
-            { text: 'Windows', link: '/developer/Windows/config' },
+            { text: 'Windows', link: '/dev/Windows/' },
+            { text: 'Windows', link: '/dev/Windows/config' },
 
           ]
         },
@@ -144,8 +151,8 @@ export default defineConfig({
           text: 'MacOS',
           collapsed: true,
           items: [
-            { text: 'MacOS', link: '/developer/MacOS/' },
-            { text: 'MacOS', link: '/developer/MacOS/config' },
+            { text: 'MacOS', link: '/dev/MacOS/' },
+            { text: 'MacOS', link: '/dev/MacOS/config' },
 
           ]
         },
@@ -153,8 +160,8 @@ export default defineConfig({
           text: 'Docker',
           collapsed: true,
           items: [
-            { text: 'Docker', link: '/developer/Docker/' },
-            { text: 'Docker', link: '/developer/Docker/config' },
+            { text: 'Docker', link: '/dev/Docker/' },
+            { text: 'Docker', link: '/dev/Docker/config' },
 
           ]
         },

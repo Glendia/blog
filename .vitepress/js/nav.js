@@ -6,10 +6,10 @@ export const nav = [
         items: [
             {
                 items: [
-                    { text: 'Git', link: '/developer/git/' },
-                    { text: '前端', link: '/developer/frontend/' },
-                    { text: '后端', link: '/developer/backend/' },
-                    { text: '系统', link: '/developer/system/' },]
+                    { text: 'Git', link: '/dev/git/' },
+                    { text: '前端', link: '/dev/frontend/' },
+                    { text: '后端', link: '/dev/backend/' },
+                    { text: '系统', link: '/dev/system/' },]
             },
 
         ]
