@@ -1,0 +1,34 @@
+name: Deploy VitePress to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master # 当您push到master分支时触发部署
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.18.0 # 指定Node.js版本
+        registry-url: 'https://registry.npmjs.org' # 使用默认的npm注册表
+
+    - name: Install dependencies with pnpm
+      run: |
+        npm install -g pnpm # 安装pnpm（如果需要）
+        pnpm install # 使用pnpm安装依赖
+
+    - name: Build VitePress site
+      run: pnpm run docs:build # 假设您的VitePress项目中有"build"脚本来构建站点
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3 # 使用GitHub Pages部署Action
+      with:
+        personal_token: ${{ secrets.GITHUB_TOKEN }} # 使用GitHub Token进行部署
+        publish_dir: ./dist # 假设VitePress构建后的静态文件位于dist目录
