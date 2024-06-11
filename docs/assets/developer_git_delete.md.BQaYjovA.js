@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./chunks/framework.0u4hjVjI.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"developer/git/delete.md","filePath":"developer/git/delete.md"}'),a={name:"developer/git/delete.md"};function o(d,s,c,n,l,p){return r(),t("div")}const m=e(a,[["render",o]]);export{_ as __pageData,m as default};

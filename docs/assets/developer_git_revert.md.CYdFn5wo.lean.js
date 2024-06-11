@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./chunks/framework.0u4hjVjI.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"developer/git/revert.md","filePath":"developer/git/revert.md"}'),a={name:"developer/git/revert.md"};function o(s,c,n,p,d,i){return r(),t("div")}const m=e(a,[["render",o]]);export{l as __pageData,m as default};
