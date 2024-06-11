@@ -1,34 +1,44 @@
-name: Deploy VitePress to GitHub Pages
+name: Deploy to GitHub Pages and Aliyun OSS
 
 on:
   push:
     branches:
-      - master # 当您push到master分支时触发部署
+      - master
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout the repository
+        uses: actions/checkout@v2
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18.18.0 # 指定Node.js版本
-        registry-url: 'https://registry.npmjs.org' # 使用默认的npm注册表
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.18.0'
 
-    - name: Install dependencies with pnpm
-      run: |
-        npm install -g pnpm # 安装pnpm（如果需要）
-        pnpm install # 使用pnpm安装依赖
+      - name: Install dependencies using pnpm
+        run: |
+          npm install -g pnpm
+          pnpm install
 
-    - name: Build VitePress site
-      run: pnpm run docs:build # 假设您的VitePress项目中有"build"脚本来构建站点
+      - name: Build the project
+        run: pnpm run build
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3 # 使用GitHub Pages部署Action
-      with:
-        personal_token: ${{ secrets.GITHUB_TOKEN }} # 使用GitHub Token进行部署
-        publish_dir: ./dist # 假设VitePress构建后的静态文件位于dist目录
+      - name: Deploy to GitHub Pages
+        run: |
+          pnpm install -g gh-pages
+          gh-pages -d dist
+
+      - name: Upload to Aliyun OSS
+        env:
+          OSS_REGION: ${{ secrets.OSS_REGION }}
+          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+          OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
+        run: |
+          curl -L https://github.com/aliyun/ossutil/releases/latest/download/ossutil64 -o ossutil
+          chmod 755 ossutil
+          ./ossutil config --endpoint=$OSS_REGION --access-key-id=$OSS_ACCESS_KEY_ID --access-key-secret=$OSS_ACCESS_KEY_SECRET
+          ./ossutil cp -r dist/ oss://$OSS_BUCKET/ --update
