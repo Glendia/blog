@@ -1,0 +1,58 @@
+:root {
+    --vp-font-family-base: 'PingFang SC', 'Punctuation SC', 'Inter', ui-sans-serif, system-ui, 'PingFang SC', 'Noto Sans CJK SC', 'Noto Sans SC', 'Heiti SC', 'Microsoft YaHei', 'DengXian', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --vp-font-family-mono: /* code font */
+  }
+:root{
+    --vp-nav-logo-height: 30px;
+}
+
+:root{
+    --vp-c-brand-1:var(--el-color-primary);
+    --vp-c-brand-2:var(--el-color-primary-light-3);
+    --vp-c-brand-3:var(--el-color-primary-light-5);
+
+}
+
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #0011ff, #00b47e);
+  }
+
+.VPButton.brand{
+    background-color: var(--el-color-primary)!important;
+}
+.VPButton.alt{
+    border-color: var(--el-color-primary-light-3)!important;
+    color: #fff; 
+}
+.VPButton.alt:hover{
+    background-color: var(--el-color-primary-light-3)!important;
+}
+.VPButton.alt:active{
+    background-color: var(--el-color-primary-light-5)!important;
+}
+.VPButton.alt:focus{
+    background-color: var(--el-color-primary-light-5)!important;
+}
+.VPButton.alt:focus-visible{
+    background-color: var(--el-color-primary-light-5)!important;
+}
+.VPButton.alt:focus-within{
+    background-color: var(--el-color-primary-light-5)!important;
+}
+.VPButton.medium{
+    border-radius: var(--el-border-radius-base)!important;
+}
+.VPFeature{
+    border: 1px solid var(--el-color-primary-light-3)!important;
+    background-color: var(--el-color-primary-light-5);
+}
+.VPNavBarMenuLink{
+    font-size: 14px!important;
+    font-weight: 700!important;
+}
+.text{
+    font-size: 14px!important;
+    font-weight: 700!important;
+
+}
