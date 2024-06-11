@@ -42,3 +42,19 @@ jobs:
           chmod 755 ossutil
           ./ossutil config --endpoint=$OSS_REGION --access-key-id=$OSS_ACCESS_KEY_ID --access-key-secret=$OSS_ACCESS_KEY_SECRET
           ./ossutil cp -r dist/ oss://$OSS_BUCKET/ --update
+
+      - name: Refresh Aliyun DCDN Cache
+        env:
+          DCDN_ACCESS_KEY_ID: ${{ secrets.DCDN_ACCESS_KEY_ID }}
+          DCDN_ACCESS_KEY_SECRET: ${{ secrets.DCDN_ACCESS_KEY_SECRET }}
+        run: |
+          # Install aliyun-cli
+          curl -L https://github.com/aliyun/aliyun-cli/releases/latest/download/aliyun-cli-linux-amd64 -o aliyun
+          chmod +x aliyun
+          sudo mv aliyun /usr/local/bin/
+          
+          # Configure aliyun-cli with your credentials
+          aliyun configure set --access-key-id $DCDN_ACCESS_KEY_ID --access-key-secret $DCDN_ACCESS_KEY_SECRET --region cn-hangzhou
+          
+          # Refresh DCDN cache (adjust ObjectPath to your needs)
+          aliyun dcdn RefreshObjectCaches --ObjectPath "<your_website_url>/*" --ObjectType "Directory"
