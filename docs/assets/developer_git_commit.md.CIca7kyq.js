@@ -1,1 +1,0 @@
-import{_ as e,c as t,o}from"./chunks/framework.0u4hjVjI.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"developer/git/commit.md","filePath":"developer/git/commit.md"}'),r={name:"developer/git/commit.md"};function a(c,i,m,s,n,p){return o(),t("div")}const l=e(r,[["render",a]]);export{_ as __pageData,l as default};

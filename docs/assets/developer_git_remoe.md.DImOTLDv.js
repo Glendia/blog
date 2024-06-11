@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as r}from"./chunks/framework.0u4hjVjI.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"developer/git/remoe.md","filePath":"developer/git/remoe.md"}'),o={name:"developer/git/remoe.md"};function a(s,c,n,p,d,i){return r(),t("div")}const l=e(o,[["render",a]]);export{_ as __pageData,l as default};

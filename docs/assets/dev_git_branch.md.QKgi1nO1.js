@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.0u4hjVjI.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"dev/git/branch.md","filePath":"dev/git/branch.md"}'),r={name:"dev/git/branch.md"};function c(n,o,s,d,i,p){return a(),t("div")}const f=e(r,[["render",c]]);export{m as __pageData,f as default};

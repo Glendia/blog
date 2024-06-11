@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as r}from"./chunks/framework.0u4hjVjI.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"developer/git/transfer.md","filePath":"developer/git/transfer.md"}'),a={name:"developer/git/transfer.md"};function o(s,n,c,p,d,i){return r(),t("div")}const l=e(a,[["render",o]]);export{_ as __pageData,l as default};
