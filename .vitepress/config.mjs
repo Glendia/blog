@@ -9,7 +9,7 @@ import { editLink } from './js/editLink';
 // import { algolia } from './js/algolia';
 
 export default defineConfig({
-  base: '/',
+  base: '/blog/',
   lang: 'zh-CN',
   title: "My Awesome Project",
   titleTemplate: ':title - Developer | 编织代码梦想，启航开发者未来',
@@ -51,33 +51,15 @@ export default defineConfig({
           text: 'Git指南',
           collapsed: false,
           items: [
-            { text: '前言', link: '/git/' },
-            { text: '目录', link: '/git/#快速定位' },
+            { text: '前言', link: '/developer/git/' },
+            { text: '目录', link: '/developer/git/#快速定位' },
           ]
         },
         {
           text: '初级命令',
           collapsed: true,
           items: [
-            { text: '配置', link: '/git/config' },
-            { text: '初始化仓库', link: '/git/init' },
-            { text: '克隆仓库', link: '/git/clone' },
-            { text: '管理仓库', link: '/git/manage' },
-            { text: '暂存文件', link: '/git/stage' },
-            { text: '提交文件', link: '/git/commit' },
-            { text: '推送远端', link: '/git/push' },
-            { text: '查看分支', link: '/git/branch' },
-            { text: '切换分支', link: '/git/switch' },
-            { text: '创建分支', link: '/git/create' },
-            { text: '删除分支', link: '/git/delete' },
-            { text: '重命名分支', link: '/git/rename' },
-            { text: '转移提交', link: '/git/transfer' },
-            { text: '临时保存', link: '/git/stash' },
-            { text: '文件状态', link: '/git/status' },
-            { text: '查看日志', link: '/git/log' },
-            { text: '查看作者', link: '/git/blame' },
-            { text: '合并', link: '/git/merge' },
-            { text: '还原', link: '/git/revert' }
+            { text: '配置', link: '/developer/git/config' },
 
           ]
         },
@@ -85,11 +67,7 @@ export default defineConfig({
           text: '高级命令',
           collapsed: true,
           items: [
-            { text: '查看远程', link: '/git/remote' },
-            { text: '添加远程', link: '/git/add' },
-            { text: '删除远程', link: '/git/delete' },
-            { text: '查看标签', link: '/git/tag' },
-            { text: '创建标签', link: '/git/create' },
+            { text: '查看远程', link: '/developer/git/remote' },
           ]
         },
         {
@@ -117,10 +95,6 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'Vite', link: '/developer/vite/' },
-            { text: 'VuePress', link: '/developer/vuepress/' },
-            { text: 'VuePress Theme', link: '/developer/vuepress-theme/' },
-            { text: 'VuePress Plugin', link: '/developer/vuepress-plugin/' },
-            { text: 'VuePress Theme Blog', link: '/developer/vuepress-theme-blog/' },
           ],
         },
         {
@@ -128,16 +102,6 @@ export default defineConfig({
           collapsed: true,
           items: [
             { text: 'Vue', link: '/developer/vue/' },
-            { text: 'Vuex', link: '/developer/vuex/' },
-            { text: 'Vue Router', link: '/developer/vue-router/' },
-            { text: 'Vue CLI', link: '/developer/vue-cli/' },
-            { text: 'VuePress', link: '/developer/vuepress/' },
-            { text: 'Node', link: '/developer/node/' },
-            { text: 'Vue', link: '/developer/vue/' },
-            { text: 'JavaScript', link: '/developer/javascript/' },
-            { text: 'HTML', link: '/developer/html/' },
-            { text: 'CSS', link: '/developer/css/' },
-            { text: 'TypeScript', link: '/developer/typescript/' },
           ]
         }],
       '/developer/system/': [
