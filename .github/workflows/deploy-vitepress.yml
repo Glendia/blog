@@ -44,4 +44,4 @@ jobs:
         env:
           OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
         run: |
-          ./ossutil64 cp -r dist/ oss://$OSS_BUCKET/ --update
+          ossutil cp -r dist/ oss://$OSS_BUCKET/ --update
