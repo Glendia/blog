@@ -17,6 +17,7 @@ export default defineConfig({
   outDir: './dist',
   assetsDir: './assets',
   cacheDir: './.vitepress/.vite',
+  cleanUrls: true,
   themeConfig: {
     logo: {
       light: '/config/light_logo.svg',
@@ -28,10 +29,6 @@ export default defineConfig({
     siteTitle: false,
     nav: nav,
     footer: footer,
-    editLink: {
-      pattern: 'https://github.com/glendia/blog/edit/master/docs/:path',
-      text: '在 GitHub 上编辑此页',
-    },
     // carbonAds: carbonAds,
     // algolia: algolia,
     outline: {
@@ -167,9 +164,10 @@ export default defineConfig({
       ],
       '/info/': [
         {
-          text: '笔记',
+          text: '笔记 - 2024',
           collapsed: true,
           items: [
+            { text: '列表页', link: '/info/' },
             { text: 'strapi安装指南', link: '/info/strapi' },
 
           ]

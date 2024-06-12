@@ -10,17 +10,16 @@ import {
 
 const members = [
   {
-    avatar: 'https://www.github.com/yyx990803.png',
-    name: 'Evan You',
+    avatar: './config/favicon.svg',
+    name: 'Glendia',
     title: 'Creator',
-    org: 'Vue.js',
-    orgLink: 'https://vuejs.org',
-    desc: 'Author of Vue.js',
+    org: 'oisx',
+    orgLink: 'https://oisx.cn',
+    desc: 'Author of oisx.cn',
     links: [
-      { icon: 'github', link: 'https://github.com/yyx990803' },
-      { icon: 'twitter', link: 'https://twitter.com/youyuxi' }
+      { icon: 'github', link: 'https://github.com/Glendia' },
     ],
-    sponsor: 'http://localhost:5173/about/',
+    sponsor: './about/sponsor',
     actionText: '赞助'
   },
 ]
