@@ -16,6 +16,6 @@ export const nav = [
     },
     { text: '工具', link: '/tools/' },
     { text: '笔记', link: '/info/' },
-    { text: '壁纸', link: '/wallpaper/' },
     { text: '关于', link: '/about/' },
+    { text: '壁纸', link: 'https://www.oisx.cn/' },
 ]

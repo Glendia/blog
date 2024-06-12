@@ -19,7 +19,7 @@ const members = [
     links: [
       { icon: 'github', link: 'https://github.com/Glendia' },
     ],
-    sponsor: './about/sponsor',
+    sponsor: '/config/favicon.svg',
     actionText: '赞助'
   },
 ]
