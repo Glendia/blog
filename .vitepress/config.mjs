@@ -164,6 +164,16 @@ export default defineConfig({
 
           ]
         },
+      ],
+      '/info/': [
+        {
+          text: '笔记',
+          collapsed: true,
+          items: [
+            { text: 'strapi安装指南', link: '/info/strapi' },
+
+          ]
+        },
       ]
     },
 

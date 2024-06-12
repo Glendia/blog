@@ -15,7 +15,7 @@ export const nav = [
         ]
     },
     { text: '工具', link: '/tools/' },
-    { text: '资源', link: '/resource/' },
+    { text: '笔记', link: '/info/' },
     { text: '壁纸', link: '/wallpaper/' },
     { text: '关于', link: '/about/' },
 ]
