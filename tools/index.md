@@ -5,4 +5,5 @@
 [nvm-desktop_Setup_win_x64_3.3.0.exe](https://static.workstatic.cn/logs/nvm-desktop_Setup_win_x64_3.3.0.exe)  
 [Git-2.45.2-64-bit.exe ](https://static.workstatic.cn/logs/Git-2.45.2-64-bit.exe)  
 [typora-setup-x64.exe](https://static.workstatic.cn/logs/typora-setup-x64.exe)
+[fastgithub](https://static.workstatic.cn/logs/fastgithub_win-x64.zip)
 ## 视频影音{#movie}
