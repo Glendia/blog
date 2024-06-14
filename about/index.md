@@ -1,5 +1,6 @@
 ---
 layout: page
+title: 关于
 ---
 <script setup>
 import {
@@ -10,7 +11,7 @@ import {
 
 const members = [
   {
-    avatar: './config/favicon.svg',
+    avatar: '/config/favicon.svg',
     name: 'Glendia',
     title: 'Creator',
     org: 'oisx',
@@ -31,7 +32,7 @@ const members = [
       我们的团队
     </template>
     <template #lead>
-      VitePress的发展受到国际团队，其中一些人选择在下面展示。
+      Dev Logs的发展受到国际团队，其中一些人选择在下面展示。
     </template>
   </VPTeamPageTitle>
   <VPTeamMembers

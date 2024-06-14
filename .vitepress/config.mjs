@@ -10,8 +10,8 @@ import { editLink } from './js/editLink';
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: "My Awesome Project",
-  titleTemplate: ':title - Developer Blog | 编织代码梦想，启航开发者未来',
+  title: "开发者日志",
+  titleTemplate: ':title - 开发者日志',
   description: "探索编程新境界，连接开发者智慧。我们提供前沿技术资讯、实战教程、高效工具与深度交流平台，激发创意，助力每一位开发者成就不凡。从Vue.js到VitePress，携手构建互联网的明天",
   head: head,
   outDir: './dist',
@@ -164,10 +164,9 @@ export default defineConfig({
       ],
       '/info/': [
         {
-          text: '笔记 - 2024',
-          collapsed: true,
+          text: '',
           items: [
-            { text: '列表页', link: '/info/' },
+            { text: '2024年度', link: '/info/' },
             { text: 'strapi安装指南', link: '/info/strapi' },
 
           ]

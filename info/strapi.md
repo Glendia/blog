@@ -7,7 +7,7 @@
 数据库  
 * [mysql](https://www.mysql.com/downloads/)
 * [mongodb](https://www.mongodb.com/try/download/community)
-## 快速定位：
+## 快速定位{#location}
 1. [安装nodejs](#install-nodejs)
 2. [安装strapi](#install-strapi)
 3. [配置strapi项目](#config-strapi)
@@ -95,10 +95,10 @@ http://localhost:1337/admin
 yarn develop
 ```
 ## 常见问题{#faq}
-1. sharp依赖安装失败：
-`npm ERR! code ELIFECYCLE`
-`npm ERR! errno 1`
-`npm ERR! sharp@0.28.3 install:`
+### sharp依赖安装失败{#strapi-ERR}
+`npm ERR! code ELIFECYCLE`  
+`npm ERR! errno 1`  
+`npm ERR! sharp@0.28.3 install:`  
 
 解决
 1. 打开命令行输入   
@@ -117,7 +117,7 @@ yarn install
 yarn build
 yarn develop
 ```
-2. 配置数据库失败：
+2. 配置数据库失败：  
 `Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'root'@'localhost' (using password: YES)`
 解决
 1. 打开命令行输入
