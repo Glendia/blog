@@ -45,4 +45,4 @@ jobs:
           OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
           CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
         run: |
-          ossutil cp -r dist/ oss://$OSS_BUCKET
+          ossutil cp -r dist/ oss://$OSS_BUCKET -f
