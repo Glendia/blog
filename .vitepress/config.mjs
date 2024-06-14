@@ -168,6 +168,7 @@ export default defineConfig({
           items: [
             { text: '2024年度', link: '/info/' },
             { text: 'strapi安装指南', link: '/info/strapi' },
+            { text: 'clone、pull或push等证书异常', link: '/info/clone' },
 
           ]
         },
