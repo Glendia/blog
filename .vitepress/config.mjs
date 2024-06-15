@@ -16,7 +16,7 @@ export default defineConfig({
   head: head,
   outDir: './dist',
   assetsDir: './assets',
-  cacheDir: './.vitepress/.vite',
+  cacheDir: 'cache',
   cleanUrls: true,
   themeConfig: {
     logo: {
@@ -50,6 +50,7 @@ export default defineConfig({
             { text: '前言', link: '/dev/git/' },
             { text: '目录', link: '/dev/git/#Quick-positioning' },
           ]
+          
         },
         {
           text: '初级命令',
