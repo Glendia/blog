@@ -169,7 +169,7 @@ export default defineConfig({
             { text: '2024年度', link: '/info/' },
             { text: 'strapi安装指南', link: '/info/strapi' },
             { text: 'clone、pull或push等证书异常', link: '/info/clone' },
-
+            { text: '阿里云OSS命令行工具上传下载', link: '/info/ossutil' },
           ]
         },
       ]
