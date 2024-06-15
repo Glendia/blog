@@ -4,7 +4,7 @@ import { nav } from './js/nav';
 import { head } from './js/head';
 import { socialLinks } from './js/socialLinks';
 import { footer } from './js/footer';
-import { editLink } from './js/editLink';
+//import { editLink } from './js/editLink';
 // import { carbonAds } from './js/carbonAds';
 // import { algolia } from './js/algolia';
 
