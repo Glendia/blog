@@ -24,7 +24,7 @@ jobs:
           pnpm install
 
       - name: Build the project
-        run: pnpm run docs:build
+        run: pnpm run build
 
       - name: Download and setup ossutil
         run: |
