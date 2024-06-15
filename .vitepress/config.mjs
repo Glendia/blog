@@ -16,7 +16,6 @@ export default defineConfig({
   head: head,
   outDir: './dist',
   assetsDir: './assets',
-  cacheDir: 'cache',
   cleanUrls: true,
   themeConfig: {
     logo: {
