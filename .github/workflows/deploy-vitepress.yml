@@ -40,6 +40,13 @@ jobs:
         run: |
           ossutil config --endpoint=oss-$OSS_REGION.aliyuncs.com --access-key-id=$OSS_ACCESS_KEY_ID --access-key-secret=$OSS_ACCESS_KEY_SECRET
 
+      # 新增的删除步骤
+      - name: Remove all files from OSS bucket
+        env:
+          OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
+        run: |
+          ossutil rm -rf oss://$OSS_BUCKET/*
+
       - name: Upload to Aliyun OSS
         env:
           OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
