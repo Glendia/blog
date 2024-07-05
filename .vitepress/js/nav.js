@@ -1,6 +1,6 @@
 export const nav = [
     { text: '首页', link: '/' },
-    { text: '博客', link: '/post/' },
+    { text: '博客', link: '/posts/' },
     { text: '文档', link: '/doc/' },
     { text: '资源', link: '/resource/' },
     { text: '关于', link: '/about/' },
