@@ -1,1 +1,0 @@
-import{_ as e,c as t,o}from"./chunks/framework.0u4hjVjI.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"dev/git/clone.md","filePath":"dev/git/clone.md"}'),a={name:"dev/git/clone.md"};function c(n,r,s,d,i,l){return o(),t("div")}const m=e(a,[["render",c]]);export{_ as __pageData,m as default};

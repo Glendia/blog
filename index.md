@@ -45,12 +45,3 @@ footer:
   message: 'Copyright © 2023 [VitePress](https://vitepress.dev/)'
   links: 'https://vitepress.dev/'
 ---
-
-## Getting Started
-
-You can get started using VitePress right away using `npx`!
-
-```sh
-npm init
-npx vitepress init
-```
