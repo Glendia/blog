@@ -26,7 +26,7 @@ export default defineConfig({
   head: head, //头部
   themeConfig: {
     logo: {
-      light: "./favicon.svg",
+      src: "./favicon.svg",
       alt: "思行工坊",
     },
     darkModeSwitchLabel: "深色模式", //浅色模式
