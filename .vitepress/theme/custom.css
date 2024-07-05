@@ -1,0 +1,14 @@
+:root {
+  --vp-c-brand-1: var(--vp-c-bluesky-1);
+  --vp-c-brand-2: var(--vp-c-bluesky-2);
+  --vp-c-brand-3: var(--vp-c-bluesky-3);
+}
+:root {
+  --vp-c-bluesky-1: #3662ec;
+  --vp-c-bluesky-2: #2544a3;
+  --vp-c-bluesky-3: #0d39bd;
+}
+:root {
+  --vp-font-family-base: "FangYuanTi", "PingFang SC", "Microsoft YaHei",sans-serif;
+  --vp-font-family-mono: "FangYuanTi", "PingFang SC", "Microsoft YaHei",sans-serif; /* code font */
+}

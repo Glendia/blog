@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'PingFang SC';
+    src: url('https://cdn.workstatic.cn/fonts/PingFang/PingFang_SC_Regular.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FangYuanTi';
+    src: url('https://cdn.workstatic.cn/fonts/AlimamaFangYuanTi/AlimamaFangYuanTiVF-Thin.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
