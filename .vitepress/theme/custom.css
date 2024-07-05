@@ -9,6 +9,6 @@
   --vp-c-bluesky-3: #0d39bd;
 }
 :root {
-  --vp-font-family-base: "FangYuanTi", "PingFang SC", "Microsoft YaHei",sans-serif;
-  --vp-font-family-mono: "FangYuanTi", "PingFang SC", "Microsoft YaHei",sans-serif; /* code font */
+  --vp-font-family-base: "PingFang SC", "FangYuanTi","Microsoft YaHei",sans-serif;
+  --vp-font-family-mono: "PingFang SC", "FangYuanTi", "Microsoft YaHei",sans-serif; /* code font */
 }
