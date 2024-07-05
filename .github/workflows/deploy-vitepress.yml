@@ -40,7 +40,6 @@ jobs:
         run: |
           ossutil config --endpoint=oss-$OSS_REGION.aliyuncs.com --access-key-id=$OSS_ACCESS_KEY_ID --access-key-secret=$OSS_ACCESS_KEY_SECRET
 
-      # 新增的删除步骤
       - name: Remove all files from OSS bucket
         env:
           OSS_BUCKET: ${{ secrets.OSS_BUCKET }}
@@ -53,3 +52,18 @@ jobs:
           CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
         run: |
           ossutil cp -r dist/ oss://$OSS_BUCKET -f
+
+      - name: Install aliyun CLI
+        run: |
+          curl -sSLO https://aliyuncli.alicdn.com/aliyun-cli-linux-latest-amd64.tgz
+          tar -xzf aliyun-cli-linux-latest-amd64.tgz
+          sudo mv aliyun /usr/local/bin/
+
+      - name: Refresh Aliyun CDN
+        env:
+          CDN_ACCESS_KEY_ID: ${{ secrets.CDN_ACCESS_KEY_ID }}
+          CDN_ACCESS_KEY_SECRET: ${{ secrets.CDN_ACCESS_KEY_SECRET }}
+          CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
+        run: |
+          aliyun configure set --profile akProfile --mode AK --access-key-id $CDN_ACCESS_KEY_ID --access-key-secret $CDN_ACCESS_KEY_SECRET
+          aliyun cdn RefreshObjectCaches --ObjectPath "https://$CUSTOM_DOMAIN/*" --ObjectType "Directory"
