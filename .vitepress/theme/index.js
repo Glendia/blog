@@ -1,5 +1,5 @@
 import { h } from 'vue'
-import DefaultTheme from 'vitepress/themes-oisx'
+import DefaultTheme from 'vitepress/theme-without-fonts'
 import './custom.css'
 import './fonts.css'
 
