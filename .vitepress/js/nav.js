@@ -1,8 +1,20 @@
 export const nav = [
     { text: '首页', link: '/' },
-    { text: 'AI绘画', link: '/aiart/' },
-    { text: '工具', link: '/tools/' },
-    { text: '笔记', link: '/info/' },
+    { text: '博客', link: '/post/' },
+    { text: '文档', link: '/doc/' },
+    { text: '资源', link: '/resource/' },
     { text: '关于', link: '/about/' },
-    { text: '壁纸', link: 'https://www.oisx.cn/' },
+    {
+        text: '线上产品',
+        items: [
+          {
+            // 该部分的标题
+            text: '网站应用',
+            items: [
+              { text: '奥斯壁纸', link: 'http://www.oisx.cn' },
+              { text: 'chatGPT', link: 'https://chat.oisx.cn' }
+            ]
+          }
+        ]
+      },
 ]
