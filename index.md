@@ -2,19 +2,19 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 hero:
-  name: "开发者日志"
-  text: "我用我想"
-  tagline: 编织代码梦想，启航开发者未来 
+  name: 思行工坊
+  text: 字里行间 代码生辉
+  tagline: 开发者的创意工坊
   image:
-    src: /config/hero.gif
-    alt: My Awesome Project
+    src: /images/vue.svg
+    alt: 思行工坊
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 我的博客
+      link: /posts/
     - theme: alt
-      text: API Examples 
-      link: /api-examples
+      text: 我的文档
+      link: /doc/
 
 features:
 - icon: ⚡️ 
@@ -38,7 +38,4 @@ features:
   linkText: Learn More
   rel: nofollow
   target: _blank
-footer:
-  message: 'Copyright © 2023 [VitePress](https://vitepress.dev/)'
-  links: 'https://vitepress.dev/'
 ---
