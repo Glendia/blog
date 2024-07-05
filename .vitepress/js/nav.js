@@ -2,7 +2,7 @@ export const nav = [
     { text: '首页', link: '/' },
     { text: '博客', link: '/posts/' },
     { text: '文档', link: '/doc/' },
-    { text: '资源', link: '/resource/' },
+    { text: '资源', link: '/app/' },
     { text: '关于', link: '/about/' },
     {
         text: '线上产品',
