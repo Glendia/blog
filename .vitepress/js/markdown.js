@@ -1,0 +1,21 @@
+export const markdown = {
+  container: {
+    tipLabel: "提示",
+    warningLabel: "警告",
+    dangerLabel: "危险",
+    infoLabel: "信息",
+    detailsLabel: "详细信息",
+    codeLabel: "代码",
+    codeCopyLabel: "复制代码",
+    codeCopiedLabel: "代码已复制",
+    codeCopyErrorLabel: "复制代码失败",
+    codeCopySuccessLabel: "复制代码成功",
+    codeCopyButtonLabel: "复制代码",
+    codeCopyButtonTooltip: "复制代码",
+    codeCopyButtonTooltipCopied: "已复制代码",
+    codeCopyButtonTooltipError: "复制代码失败",
+    codeCopyButtonTooltipSuccess: "复制代码成功",
+    codeCopyButtonTooltipCopying: "正在复制代码",
+    lineNumbers: true,
+  },
+};
