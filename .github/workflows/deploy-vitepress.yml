@@ -66,4 +66,4 @@ jobs:
           CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}
         run: |
           aliyun configure set --profile akProfile --mode AK --region cn-hangzhou --access-key-id $CDN_ACCESS_KEY_ID --access-key-secret $CDN_ACCESS_KEY_SECRET
-          aliyun cdn RefreshObjectCaches --ObjectPath "http://$CUSTOM_DOMAIN/*" --ObjectType "Directory"
+          aliyun cdn RefreshObjectCaches --ObjectPath "https://$CUSTOM_DOMAIN/" --ObjectType "Directory"
