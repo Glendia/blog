@@ -1,12 +1,12 @@
 # 我的博客
 ## 用到的程序/网站
->hexo
->cloudflare
->vercel
->netfily
->OSS
->CDN
->github
+>hexo  
+>cloudflare  
+>vercel  
+>netfily  
+>OSS  
+>CDN  
+>github  
 ## 主题
 **anzhiyu**
 ## 项目
